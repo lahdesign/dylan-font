@@ -1,0 +1,274 @@
+@font-face {
+    src: url("./fonts/CondorVariable-VF-Edu.woff2") format("woff2"),
+        url('./fonts/CondorVariable-VF-Edu.ttf') format('truetype');
+
+    font-family: 'Condor Variable Regular';
+    font-style: normal;
+    font-weight: normal;
+    }
+   
+    *{
+        margin:0px;
+        /* border:blue 3px dashed; */
+    }
+
+    body{
+    background-color: rgb(225, 205, 151);
+    font-family: 'Condor Variable Regular';
+}
+
+.hero{
+    background-image: url("images/herosection.svg");
+    background-size: cover;
+    height:1000px;
+   
+    
+}
+.hero2{
+    color: rgb(225, 205, 151);
+    position: bottom;
+    margin-top: 85px; 
+    font-size:50px;
+
+}
+
+/* how the page wrapper will appear on mobile */
+.page-wrapper{
+    /* width: min(100% - 3rem, 80ch); */
+    margin-inline: auto;
+}
+/* how the page wrapper appears on desktop */
+
+
+
+@media only screen and (min-width:800px){
+.page-wrapper{
+display: grid;
+
+}
+
+}
+/* CSS for the footer */
+footer{
+    background-color: rgb(165, 80, 80);
+    margin:0px;
+}
+.thesoul{
+    background-color: rgb(76, 76, 76);
+    margin:0px;
+}
+
+/* variable font animation */
+h3{
+    font-weight:20; 
+    text-align: center;
+    font-size: 4.2em;
+    animation: weightChange 8s infinite;
+    /* margin-top: 200px; */
+}
+
+
+
+@keyframes weightChange {
+    0%, 100%{
+              font-variation-settings: "wght" 200, "wdth" 50, "ital" 1;
+    }
+    50%{
+              font-variation-settings: "wght" 900, "wdth" 150, "ital" 1;
+    }
+    
+    }
+/* variable font that changes on hover */
+
+.variable-font{
+    font-weight:1 ;
+    height:100vh;
+    font-size: 10em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    transition: 
+        font-weight 500ms,
+        font-variation-settings 3s;
+  
+}
+
+.variable-font:hover{
+    font-weight:500 ;
+    height:100vh;
+    font-size: 7em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+}
+
+
+
+
+    
+/* second page */
+
+  .content-wrapper {
+    width:100%;
+    height: 1000px;
+    display: grid;
+    grid-gap: 0px;
+    padding:10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto ;
+    grid-template-areas: 
+        "p p p p p h h h h h h h"
+        "p p p p p v v v v v v v"
+        "p p p p p v v v v v v v";
+  }
+
+  .pattern{
+    background-image: url("images/page2pattern.svg");
+    background-size: cover;
+    grid-area: p;
+    background-color: rgb(80, 119, 165);
+    height: 200;
+    background-position: top;
+   
+   
+}
+
+
+#history{
+    grid-area: h;
+    background-color: rgb(76, 76, 76);
+    color: rgb(255, 255, 255)
+    
+}
+
+#variations{
+    grid-area: v;
+    background-color: rgb(225, 205, 151);
+    color: rgb(80, 119, 165)
+    
+}
+
+/* third page */
+
+.content-wrapperthree {
+    width:100%;
+    display: grid;
+    grid-gap: 0px;
+    padding:10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "w w w w w w j j j j j j"
+        "w w w w w w j j j j j j"
+        "o o o o o o o o o o o o"
+        "o o o o o o o o o o o o";
+ }
+ 
+ .pattertwo{
+    background-image: url("images/page3pattern");
+    grid-area: j;
+    background-color: rgb(225, 205, 151);
+    color: rgb(80, 119, 165)
+   
+  }
+
+ .width{
+    grid-area: w;
+    background-color: rgb(80, 119, 165);
+    height: 700px
+    
+}
+
+  
+  
+  .bottomart{
+    grid-area: o;
+    background-color: rgb(76, 76, 76)
+    
+    
+
+  }
+
+
+
+/* Glyphs page */
+.content-wrappertwo {
+    width:100%;
+    display: grid;
+    grid-gap: 0px;
+    padding:10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "m m m m m m b b b b b b"
+        "k k k k k k a a a a a a"
+        "s s s s s s s s s s s s";
+}
+.glyph1{
+    grid-area: m;
+    background-color:rgb(188, 102, 102);
+    color: rgb(51, 71, 110);
+    font-weight: 700;
+    height: 1200px;
+
+}
+.glyph2{
+    grid-area:b
+}
+.glyph3{
+    grid-area:k
+}
+.glyph4{
+    grid-area:a
+}
+
+/* footer page */
+
+.content-wrappertwo {
+    width:100%;
+    height: 1000px;
+    display: grid;
+    grid-gap: 0px;
+    padding:10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "f f f f f f f f f f f f"
+        "f f f f f f f f f f f f"
+        "s s s s s s s s s s s s";
+  }
+        
+  .footer{
+    grid-area: f;
+    background-color: rgb(165, 85, 85);
+    height: 800px;
+    margin-bottom:0px;
+    
+}
+.basic-link {
+    color:#1e4874;
+    height: 600px;
+  
+
+  }
+  .basic-link:hover {
+    color:#1e4874;
+  }
+
+  .thesoul{
+    margin-top:0px;
+    background-image: url("images/page5pattern.svg");
+    background-size: cover;
+    background-position: right;
+    grid-area: s;
+    height:600px;
+    background-color: rgb(76, 76, 76);
+    color: rgb(255, 255, 255)
+    
+    
+  }
+  
